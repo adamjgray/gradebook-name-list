@@ -11,8 +11,6 @@ her gradebook.
 Just type in the spaces!  If you want the print to include the green and white
 bars, you'll need to use firefox and enable background image printing.
 
-[Try it here!](http://htmlpreview.github.com/adamjgray/gradebook-name-list)
-
 ### Copyright and License
 
 Copyright (c) 2013 Adam J Gray
