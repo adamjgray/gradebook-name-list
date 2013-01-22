@@ -8,8 +8,9 @@ her gradebook.
 
 ### Usage
 
-Just type in the spaces!  If you want the print to include the green and white
-bars, you'll need to use firefox and enable background image printing.
+Download and view the html file and just type in the spaces!  If you want the 
+print to include the green and white bars, you'll need to use firefox and 
+enable background image printing.
 
 ### Copyright and License
 
