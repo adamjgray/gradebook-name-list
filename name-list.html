@@ -1,0 +1,105 @@
+<html ng-app>
+<head>
+	<title></title>
+	<style type="text/css">
+		input {
+			font-size: 1.0em;
+			font-family: sans-serif;
+			font-weight: bold;
+			border: none;
+			margin: 0; 
+			padding: 0; 
+			min-width: 15px;
+		}
+		table {
+			height: 8.875in;
+			border: 1px solid #3b7e3d;
+			border-spacing: 1px;
+			border-collapse:collapse;
+			font-size: 0.6em;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+		tr {
+			border-bottom: 1px solid #3b7e3d;
+		}
+		td {
+			width: 1.75in;
+			border-left: 1px solid #3b7e3d;
+		}
+		td:first {
+			border-left: none;
+		}
+		.green {
+			background-color: #d9e4db;
+		}
+		.white {
+			background-color: #eeeeea;
+		}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+	<script type="text/javascript">
+		function GradeBookCtrl($scope) {
+			$scope.students = [
+				{name: 'John Doe'},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''},
+				{name: ''}
+			];
+
+			$scope.stripe = function($index) {
+				return $index % 4 == 0 || ($index - 1) % 4 == 0 ? 'green' : 'white';
+			}
+		}
+	</script>
+</head>
+<body ng-controller="GradeBookCtrl">
+<table>
+	<tr class="{{stripe($index)}}" ng-repeat="student in students">
+		<td>
+			<input type="text" ng-model="student.name" class="{{stripe($index)}}"></input>
+			<span style="float: right;">{{$index + 1}}</span>
+		</td>
+		<td>{{student.name}}<span style="float: right;">{{$index + 1}}</span></td>
+		<td>{{student.name}}<span style="float: right;">{{$index + 1}}</span></td>
+		<td>{{student.name}}<span style="float: right;">{{$index + 1}}</span></td>
+	</tr>
+</table>
+</body>
+</html>
