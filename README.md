@@ -12,6 +12,8 @@ Download and view the html file and just type in the spaces!  If you want the
 print to include the green and white bars, you'll need to use firefox and 
 enable background image printing.
 
+Or you can try it [here](http://adamjgray.github.com/gradebook-name-list/).
+
 ### Copyright and License
 
 Copyright (c) 2013 Adam J Gray
